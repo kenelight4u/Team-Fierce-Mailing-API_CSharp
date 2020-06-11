@@ -1,22 +1,20 @@
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace MailAPI.Models
+namespace MailAPI.DTOs
 {
-
-    public class Email
+    public class EmailCreateDTO
     {
 
-        public Email()
-        {
-            BlindCopy = "Email";
-        }
-
-        public int Id { get; set; }
+       
+        [Required]
+        [JsonPropertyName("recipient")]
         public string Recipient { get; set; }
         public string Sender { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
         public string HtmlBody { get; set; }
+
 
         [JsonPropertyName("cc")]
         public string Copy { get; set; }
