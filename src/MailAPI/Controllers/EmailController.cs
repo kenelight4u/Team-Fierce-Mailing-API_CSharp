@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MailAPI.Controllers
 {
+    [ApiController]
     public class EmailController : ControllerBase
     {
         private readonly IEmailRepo _repository;
@@ -33,7 +34,7 @@ namespace MailAPI.Controllers
         {
             var emailModel = _mapper.Map<Email>(emailCreateDTO);
             _repository.SendMail(emailModel);
-           // _repository.SaveChanges();
+           _repository.SaveChanges();
              var emailReadDTO = _mapper.Map<EmailReadDTO>(emailModel);
              return Ok(emailReadDTO);
         }
