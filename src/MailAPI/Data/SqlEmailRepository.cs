@@ -7,8 +7,8 @@ namespace MailAPI.Data
 {
     public class SqlEmailRepository : IEmailRepo
     {
-        private readonly EmailDBContext _context;
-        public SqlEmailRepository(EmailDBContext context)
+        private readonly EkeneDBContext _context;
+        public SqlEmailRepository(EkeneDBContext context)
         {
             _context = context;
         }

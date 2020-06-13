@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MailAPI.Data
 {
-    public class EmailDBContext : DbContext
+    public class EkeneDBContext : DbContext
     {
-        public EmailDBContext(DbContextOptions<EmailDBContext> opt) : base(opt)
+        public EkeneDBContext(DbContextOptions<EkeneDBContext> opt) : base(opt)
         {
             
         }

@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MailAPI.Migrations
 {
-    [DbContext(typeof(EmailDBContext))]
-    [Migration("20200611034455_InitialMigration")]
-    partial class InitialMigration
+    [DbContext(typeof(EkeneDBContext))]
+    [Migration("20200612155855_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

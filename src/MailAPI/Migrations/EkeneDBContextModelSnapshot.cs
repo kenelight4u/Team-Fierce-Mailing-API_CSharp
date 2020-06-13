@@ -7,8 +7,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MailAPI.Migrations
 {
-    [DbContext(typeof(EmailDBContext))]
-    partial class EmailDBContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(EkeneDBContext))]
+    partial class EkeneDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

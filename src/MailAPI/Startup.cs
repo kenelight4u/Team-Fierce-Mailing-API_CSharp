@@ -30,9 +30,9 @@ namespace MailAPI
         {
             services.AddControllers();
 
-            services.AddDbContext<EmailDBContext>(opt => opt.UseSqlServer(
+             services.AddDbContext<EkeneDBContext>(opt => opt.UseSqlServer(
                 Configuration.GetConnectionString("AppDBString")
-            ) );
+            ));
 
             services.AddScoped<IEmailRepo, SqlEmailRepository>();
 
@@ -44,6 +44,7 @@ namespace MailAPI
         {
             if (env.IsDevelopment())
             {
+
                 app.UseDeveloperExceptionPage();
             }
 
